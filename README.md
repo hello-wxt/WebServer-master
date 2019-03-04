@@ -1,7 +1,8 @@
 # WebServer-master
 c++写的高并发linux web服务器
 本项目为C++11编写的Web服务器，解析了get、head请求，可处理静态资源，支持HTTP长连接，支持管线化请求，并实现了异步日志，记录服务器运行状态。
-Technical points
+
+Technical points: 
 使用Epoll边沿触发的IO多路复用技术，非阻塞IO，使用Reactor模式
 使用多线程充分利用多核CPU，并使用线程池避免线程频繁创建销毁的开销
 使用基于小根堆的定时器关闭超时请求
